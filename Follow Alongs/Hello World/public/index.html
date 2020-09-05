@@ -3,6 +3,23 @@
 
 <head>
     <title>Hellow world</title>
+    <style>
+        div{
+            border: blue double 5px;
+            /* border-width: 20;
+            border-color: purple;
+            border-style: groove; */
+        }
+        .test-class{
+            color: red;
+            font-weight: bold;
+        }
+        #myButton{
+            padding:30px;
+            font-size: 2em;
+            margin-left: 80px;
+        }
+    </style>
 </head>
 
 <body>
@@ -14,10 +31,10 @@
     <br>
     <br>
     <span>The span tag is the next popular</span>
-    <span>A span shares the line</span>
+    <span class = "test-class">A span shares the line</span>
     <span>because the display property is 'inline'</span>
-    <p>But with CSS you can do anything</p>
-    <button>Press Me!</button>
+    <p class = "test-class" style = "font-size: 3em;">But with CSS you can do anything</p> 
+    <button id = "myButton">Press Me!</button>
 </body>
 
 
