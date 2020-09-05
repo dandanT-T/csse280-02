@@ -4,18 +4,20 @@
 <head>
     <title>Hellow world</title>
     <style>
-        div{
+        div {
             border: blue double 5px;
             /* border-width: 20;
             border-color: purple;
             border-style: groove; */
         }
-        .test-class{
+
+        .test-class {
             color: red;
             font-weight: bold;
         }
-        #myButton{
-            padding:30px;
+
+        #myButton {
+            padding: 30px;
             font-size: 2em;
             margin-left: 80px;
         }
@@ -31,10 +33,20 @@
     <br>
     <br>
     <span>The span tag is the next popular</span>
-    <span class = "test-class">A span shares the line</span>
+    <span class="test-class">A span shares the line</span>
     <span>because the display property is 'inline'</span>
-    <p class = "test-class" style = "font-size: 3em;">But with CSS you can do anything</p> 
-    <button id = "myButton">Press Me!</button>
+    <p class="test-class" style="font-size: 3em;">But with CSS you can do anything</p>
+    <button id="myButton">Press Me!</button>
+
+    <script>
+        console.log("Hello Would");
+        document.querySelector("#myButton").onclick = (event) => {
+            alert("this is important!");;
+        }
+        // console.log(buttonEL.id);
+        // console.log(buttonEL.classList);
+        // console.log(buttonEL.onclick);
+    </script>
 </body>
 
 
