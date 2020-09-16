@@ -28,6 +28,7 @@ rhit.main = function () {
 			const dataAmount = parseInt(button.dataset.amount);
 			const dataIsMultiplication = button.dataset.isMultiplication == "true";
 			// console.log(`Amount: ${dataAmount} isMult:${dataIsMultiplication}`);
+			rhit.updateCounter(dataAmount,dataIsMultiplication);
 		}
 	}
 
@@ -38,8 +39,13 @@ rhit.main = function () {
 	// });
 };
 
-rhit.updateCounter = function () {
-	
+rhit.updateCounter = function (amount, isMultiplication) {
+	if(isMultiplication){
+		rhit.counter *= amount;
+	}else{
+		rhit.counter += amount;
+	}
+	document.querySelector("#counterText").innerHTML = `Count = ${rhit.counter}`;
 };
 
 rhit.main();
