@@ -9,6 +9,9 @@ body {
 
 .page-container {
     margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .square{
     background-color: #80000080;
@@ -48,5 +51,6 @@ body {
 
 #gameBoard{
     height:300px;
+    /* margin: 0 auto; */
     width:300px;
 }
