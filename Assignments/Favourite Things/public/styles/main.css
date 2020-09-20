@@ -1,0 +1,68 @@
+.title{
+    font-size: 2em;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#counter{
+    font-size: 2em;
+    text-align: center;
+    /* border: solid black; */
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.container {
+    margin-top: 75px;
+}
+
+#decrement, #increment, #reset{
+    background-color: #800000;
+    color: white;
+    
+}
+
+#favoriteColorContainer {
+    width: 200px;
+    margin: 20px;
+ }
+  
+ #favoriteColorBox {
+    background-color: #800000;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+ }
+
+ .no-gutters>[class*=col-]{
+     padding-left: 2px;
+     padding-right: 2px;
+ }
+
+#blue, #green, #red, #purple{
+    color: white;
+}
+
+#blue:hover, #green:hover, #red:hover, #purple:hover{
+    color: black;
+}
+
+ #blue{
+     background-color: blue;
+ }
+
+ #green{
+    background-color: green;
+}
+
+#red{
+    background-color: red;
+}
+
+#purple{
+    background-color: purple;
+}
