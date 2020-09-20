@@ -16,7 +16,45 @@
   </nav>
   <div id="mainPage" class="page-container">
     <h1 id="gameStateText">X's Turn</h1>
-    <!-- Bootsrap System -->
+
+    <div id="gameBoard">
+        <div class="square b-bottom b-right"></div>
+        <div class="square b-bottom b-right b-left"></div>
+        <div class="square b-bottom b-left"></div>
+        <div class="square b-top b-bottom b-right"></div>
+        <div class="square b-top b-bottom b-right b-left">X</div>
+        <div class="square b-top b-bottom b-left">X</div>
+        <div class="square b-top b-right">X</div>
+        <div class="square b-top b-right b-left"></div>
+        <div class="square b-top b-left">X</div>
+        <button type="button" class="btn" id="newGameButton">New Game</button>
+
+    </div>
+
+<!-- Flex box system -->
+    <!-- <div id="gameBoard">
+      <div class="my-row">
+        <div class="square b-bottom b-right">X</div>
+        <div class="square b-bottom b-right b-left">X</div>
+        <div class="square b-bottom b-left">X</div>
+      </div>
+      <div class="my-row">
+        <div class="square b-top b-bottom b-right">X</div>
+        <div class="square b-top b-bottom b-right b-left">X</div>
+        <div class="square b-top b-bottom b-left">X</div>
+      </div>
+      <div class="my-row">
+        <div class="square b-top b-right">X</div>
+        <div class="square b-top b-right b-left">X</div>
+        <div class="square b-top b-left">X</div>
+      </div>
+
+      <div class="my-row">
+        <button type="button" class="btn" id="newGameButton">New Game</button>
+      </div>
+    </div> -->
+
+     <!-- Bootsrap System -->
     <!-- <div class="row justify-content-center">
       <div id="gameBoard" class="col-10 col-md-6">
         <div class="row">
@@ -41,29 +79,6 @@
       </div>
 
     </div> -->
-
-
-    <div id="gameBoard">
-      <div class="my-row">
-        <div class="square b-bottom b-right">X</div>
-        <div class="square b-bottom b-right b-left">X</div>
-        <div class="square b-bottom b-left">X</div>
-      </div>
-      <div class="my-row">
-        <div class="square b-top b-bottom b-right">X</div>
-        <div class="square b-top b-bottom b-right b-left">X</div>
-        <div class="square b-top b-bottom b-left">X</div>
-      </div>
-      <div class="my-row">
-        <div class="square b-top b-right">X</div>
-        <div class="square b-top b-right b-left">X</div>
-        <div class="square b-top b-left">X</div>
-      </div>
-
-      <div class="my-row">
-        <button type="button" class="btn" id="newGameButton">New Game</button>
-      </div>
-    </div>
 
 
   </div>
