@@ -10,6 +10,15 @@ rhit.PageController = class {
 	constructor() {
 		// Enable the on chilck listeners
 		this.game = new rhit.Game();
+		const squares = document.querySelectorAll(".square");
+		for(const square of squares){
+			square.onclick = (event) => {
+				const buttonIndex = parseInt(square.dataset.buttonIndex);
+				this.game.pressButtonAtIndex(buttonIndex);
+
+
+			}
+		}
 	}
 
 	methodName() {
@@ -38,12 +47,15 @@ rhit.Game = class {
 		for (let k = 0; k < 9; k++) {
 			this.board.push(rhit.Game.Mark.NONE);
 		}
-		console.log(this.board);
-		console.log('this.board = ', this.board);
-		console.log('this.state = ', this.state);
+		
+		// console.log(this.board);
+		// console.log('this.board = ', this.board);
+		// console.log('this.state = ', this.state);
 	}
 	pressButtonAtIndex(buttonIndex) {
-		
+		this.board[buttonIndex] = rhit.Game.Mark.X;
+		console.log("Chicked",buttonIndex);
+		console.log(this.board);
 	}
 
 	getMarkAtIndex(buttonIndex) {
