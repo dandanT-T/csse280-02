@@ -12,17 +12,30 @@ rhit.PageController = class {
 		this.game = new rhit.Game();
 		const squares = document.querySelectorAll(".square");
 		for(const square of squares){
+			// square.onclick = function(event) {
+			// 	const buttonIndex = parseInt(square.CDATA_SECTION_NODE.buttonIndex);
+			// 	this.game.pressButtonAtIndex(buttonIndex);
+			// }
 			square.onclick = (event) => {
 				const buttonIndex = parseInt(square.dataset.buttonIndex);
 				this.game.pressButtonAtIndex(buttonIndex);
-
-
-			}
+				this.updateView();
+			};
 		}
+
+		document.querySelector("#newGameButton").onclick = (event) => {
+			this.game = new rhit.Game();
+			this.updateView();
+		};
+		this.updateView();
 	}
 
-	methodName() {
-
+	updateView() {
+		const squares = document.querySelectorAll(".square");
+		squares.forEach((square, index) => {
+			square.innerHTML = this.game.getMarkAtIndex(index);
+		})
+		document.querySelectorAll("#gameStateText").innerHTML = this.game.state;
 	}
 }
 
