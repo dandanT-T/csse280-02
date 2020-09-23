@@ -43,15 +43,15 @@ rhit.Game = class {
 		console.log('this.state = ', this.state);
 	}
 	pressButtonAtIndex(buttonIndex) {
-
+		
 	}
 
 	getMarkAtIndex(buttonIndex) {
-		return "X";
+		return this.board[buttonIndex];
 	}
 
 	getState() {
-		return "X's Turn";
+		return this.state;
 	}
 }
 
