@@ -1,0 +1,71 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+
+
+#gamestatus {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* .buttons{
+    border: #800000 solid;
+} */
+
+.buttons>.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.light{
+    /* background-color: #000000;
+    color: #DDDDDD; */
+    /* padding: 15px 10px; */
+    margin-left: 4px;
+    margin-right: 4px;
+    /* border: #800000 solid; */
+}
+
+.light>.btn {
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+
+#newGame{
+    background-color: #800000;
+    color:white;
+    margin-top: 15px;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    #gamestatus {
+        font-size: 2.25em;
+    }
+
+    .light>.btn {
+         font-size: 1.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    #gamestatus {
+        font-size: 3em;
+    }
+    .light>.btn{
+        font-size: 2em;
+    }
+}
