@@ -19,13 +19,21 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 /* .buttons{
-    border: #800000 solid;
+    border: #800000 solida;
 } */
+.buttons{
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    margin: auto;
 
+
+}
 .buttons>.row{
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
 
@@ -37,6 +45,7 @@ body {
     margin-right: 4px;
     /* border: #800000 solid; */
 }
+
 
 .light>.btn {
     margin: auto;
