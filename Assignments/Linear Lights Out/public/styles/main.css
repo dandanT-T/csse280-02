@@ -50,7 +50,7 @@ body {
 .light>.btn {
     margin: auto;
     padding: 5px 10px 5px 10px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 #newGame{
